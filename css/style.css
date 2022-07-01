@@ -15,7 +15,6 @@ body{
 
 .container {
 	max-width: 1210px;
-	margin-left: 130px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: 15px;
@@ -51,6 +50,8 @@ body{
 }
 
 a{
+	display: flex;
+	align-items: center;
 	text-decoration: none;
 	color: #FFFFFF
 }
@@ -187,7 +188,7 @@ text-align: center;}
   height: 24px;
   align-items: center;
 }
-.button__text {
+.button__text  {
   margin-right: 6px;
   font-weight: 600;
   font-size: 16px;
@@ -341,30 +342,48 @@ text-align: center;}
 }
 /* TABLE */
 
-.table {
-  height: 448px;
-  padding-left: 32px;
-  padding-right: 32px;
-  border-radius: 25px;
-  background: #1A1B23;
-}
-.table-row {
-  width: 1116px;
-  height: 56px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  display: flex;
-  align-items: center;
-}
-.table-row-first {
-  width: 1116px;
-  height: 76px;
-  padding-top: 20px;
-  margin-bottom: 16px;
-  display: flex;
-  align-items: center;
-}
+/* ///// */
 
+
+.table{
+	display: block;
+	width: 1180px;
+	margin-top: 41px;
+	margin-bottom: 125px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 20px 32px;
+	background: #1A1B23;
+	border-radius: 25px;
+	color: #FFFFFF;
+}
+.row{
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+	margin-top: 14px;
+	width: 1116px;
+	height: 56px;
+}
+.row-end{
+	margin-right: 0;
+	display: flex;
+	align-items: center;
+
+	margin-top: 14px;
+	width: 1116px;
+	height: 56px;
+}
+.row-first{
+	margin-right: 0;
+
+	display: flex;
+	align-items: center;
+
+	margin-bottom: 15px;
+	width: 1116px;
+	height: 56px;
+}
 .table__coin {
   position: relative;
   width: 207px;
@@ -423,9 +442,12 @@ text-align: center;}
   margin-right: 32px; 
 }
 .table-button {
-  display: flex;
+	display: flex;
   height: 24px;
   align-items: center;
+}
+a{
+	text-decoration: none;
 }
 .button__text {
   font-weight: 600;
@@ -438,9 +460,9 @@ text-align: center;}
   width: 24px;
   height: 24px;
 }
-hr{
-  border: 0.75px solid #2B2C3B;
-  width: 1116px;
+.table hr{
+  border: 0.1px solid #2B2C3B;
+	width: 1116px;
 }
 .table-button  :hover{
   color: #B982FF;
@@ -499,6 +521,8 @@ hr{
 	opacity: 0.96;
 }
 .email-block__subtitle {
+	justify-content: center;
+	display: flex;
 	margin-bottom: 32px;
 	font-weight: 400;
 	font-size: 16px;	
@@ -532,15 +556,18 @@ hr{
 	line-height: 150%;
 	color: #565976;
 }
-.email-block__image {
-	width: 24px;
-	height: 24px;
-	padding-right: 0;
+.submit {
+  position: absolute;
+  width: 24px;
+  height: 25px;
+  background: transparent;
+  background-image: url(./../img/icon/arrow-email.svg);
+  border: none;
 }
 
 /* FOOTER */
 .footer {
-	position: absolute;
+	/* position: absolute; */
 	display: flex;
 	width: 1440px;
 	height: 507px;
